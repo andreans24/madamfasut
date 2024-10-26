@@ -1,0 +1,566 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+/* @import url("https://fonts.googleapis.com/css?family=Jost:700,800"); */
+
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+/* @import url("https://px.animaapp.com/671ae83a1bb586bc4037eeed.671ae83b1bb586bc4037eef0.nZtCW4G.hch.png"); */
+
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+    display: contents;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.component-wrapper * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+    pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container-center-vertical>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.auto-animated div {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated input {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay-base {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.overlay-base.animate-appear {
+    align-items: center;
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+    pointer-events: none;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.animate-nodelay {
+    animation-delay: 0s;
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.align-self-flex-end {
+    align-self: flex-end;
+}
+
+.align-self-flex-center {
+    align-self: flex-center;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+input:focus {
+    outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --cultured-pearl: #f5f5f5;
+
+    --font-size-l: 40px;
+    --font-size-m: 16px;
+
+    --font-family-jost: "Jost", Helvetica;
+}
+
+.jost-bold-black-16px {
+    color: var(--black);
+    font-family: var(--font-family-jost);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 700;
+}
+
+:root {}
+
+
+/* screen - home */
+
+.home {
+    background-color: #0e61b5;
+    height: 1642px;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 1796px;
+}
+
+.home .button4-xl4bh6 {
+    background-color: transparent;
+    height: 140px;
+    left: 1368px;
+    position: absolute;
+    top: 282px;
+    width: 142px;
+}
+
+.home .ellipse-4-3Oe1XW {
+    background-color: var(--cultured-pearl);
+    border-radius: 70px;
+    height: 140px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 140px;
+}
+
+.home .regional-4-3Oe1XW {
+    background-color: transparent;
+    height: auto;
+    left: 21px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 88px;
+    width: 104px;
+}
+
+.home .button3-xl4bh6 {
+    background-color: transparent;
+    height: 140px;
+    left: 1002px;
+    position: absolute;
+    top: 282px;
+    width: 142px;
+}
+
+.home .ellipse-3-ZLxDTJ {
+    background-color: var(--cultured-pearl);
+    border-radius: 70px;
+    height: 140px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 140px;
+}
+
+.home .regional-3-ZLxDTJ {
+    background-color: transparent;
+    height: auto;
+    left: 21px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 88px;
+    width: 104px;
+}
+
+.home .button2-xl4bh6 {
+    background-color: transparent;
+    height: 140px;
+    left: 627px;
+    position: absolute;
+    top: 282px;
+    width: 142px;
+}
+
+.home .ellipse-2-7HLVvW {
+    background-color: var(--cultured-pearl);
+    border-radius: 70px;
+    height: 140px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 140px;
+}
+
+.home .regional-2-7HLVvW {
+    background-color: transparent;
+    height: auto;
+    left: 21px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 88px;
+    width: 104px;
+}
+
+.home .button1-xl4bh6 {
+    background-color: transparent;
+    height: 140px;
+    left: 261px;
+    position: absolute;
+    top: 282px;
+    width: 142px;
+    padding: 10px;
+    /* Tambahkan padding sesuai kebutuhan */
+    align-items: center;
+    /* Menyejajarkan lingkaran dan teks secara vertikal */
+}
+
+.home .ellipse-1-CBp6hD {
+    background-color: var(--cultured-pearl);
+    border-radius: 70px;
+    height: 140px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    /* Menyusun isi secara kolom */
+    align-items: center;
+    /* Memusatkan isi secara horizontal */
+    justify-content: center;
+    /* Memusatkan isi secara vertikal */
+    margin-right: 10px;
+}
+
+.home .regional-1-CBp6hD {
+    background-color: transparent;
+    height: auto;
+    left: 21px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 88px;
+    width: 104px;
+    font-size: 16px;
+    /* Ukuran teks, sesuaikan jika perlu */
+    color: #000000;
+    /* Warna teks menjadi hitam */
+    margin-top: 8px;
+}
+
+.home .map-app {
+    background-color: transparent;
+    left: 23px;
+    top: 500px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.home .map-h4r6Rv {
+    background-color: #d9d9d9;
+    border-radius: 48px;
+    left: 0px;
+    top: 0px;
+    transform: rotate(180deg);
+}
+
+.home .map-maker-h4r6Rv {
+    background-color: transparent;
+    height: 1094px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 1744px;
+}
+
+.home .basemap-image-mgh2QB {
+    background-color: transparent;
+    height: 1094px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 1744px;
+}
+
+.home .nav-xl4bh6 {
+    background-color: transparent;
+    height: 72px;
+    left: 80px;
+    position: absolute;
+    top: 57px;
+    width: 1641px;
+}
+
+.icon {
+    font-size: 50px;
+    /*Ukuranikon,sesuaikandengankebutuhan*/
+    color: black;
+    /*Gantiwarnaikonsesuaikebutuhan*/
+
+}
+
+.home .image_logo-mErvG7 {
+    background-color: transparent;
+    height: 65px;
+    left: 1325px;
+    object-fit: cover;
+    position: absolute;
+    top: 7px;
+    width: 314px;
+}
+
+.home .title-mErvG7 {
+    background-color: transparent;
+    color: #ffffff;
+    font-family: var(--font-family-jost);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 800;
+    height: auto;
+    left: 89px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 1px;
+    width: 560px;
+}
+
+.home .icon_home-mErvG7 {
+    background-color: transparent;
+    height: 44px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 59px;
+}
+
+.home .map {
+    height: 1094px;
+    position: absolute;
+    width: 1744px;
+}
+
+.home .map-marked-alt {
+    background-color: transparent;
+    height: 60px;
+    left: 43px;
+    position: absolute;
+    top: 24px;
+    width: 60px;
+}
+
+
+#map {
+    width: 100vw;
+    height: 100%;
+    /* Atur tinggi sesuai kebutuhan */
+    border: 1px solid #ccc;
+    /* Opsional: untuk melihat batas peta */
+    margin-top: 20px;
+}
+
+
+
+
+/* button Regional */
+.btn-regional {
+    background-color: #0e61b5;
+    /* Ganti dengan warna sesuai kebutuhan */
+    color: white;
+    /* Warna teks */
+    border: none;
+    /* Menghilangkan border default */
+    padding: 10px 20px;
+    /* Padding dalam tombol */
+    border-radius: 5px;
+    /* Sudut melengkung */
+    cursor: pointer;
+    /* Menunjukkan bahwa ini adalah tombol */
+    display: flex;
+    /* Memungkinkan penggunaan flexbox untuk tata letak */
+    align-items: center;
+    /* Memastikan konten tombol tersusun rapi */
+}
+
+.btn-regional img {
+    margin-left: 10px;
+    /* Jarak antara teks dan gambar */
+}
+
+/* Efek hover untuk tombol */
+.btn-regional:hover {
+    background-color: #0a4b8c;
+    /* Warna ketika hover */
+}
+
+.circle {
+    width: 100px;
+    /* Sesuaikan ukuran lingkaran */
+    height: 100px;
+    /* Sesuaikan ukuran lingkaran */
+    border-radius: 50%;
+    background-color: #4a90e2;
+    /* Ganti dengan warna latar yang diinginkan */
+    display: flex;
+    flex-direction: column;
+    /* Atur menjadi kolom untuk teks di bawah ikon */
+    align-items: center;
+    /* Pusatkan konten secara horizontal */
+    justify-content: center;
+    /* Pusatkan konten secara vertikal */
+    text-align: center;
+    /* Pusatkan teks */
+    margin: 20px;
+    /* Jarak antar lingkaran */
+}
+
+.circle i {
+    color: #000000;
+    /* Warna ikon menjadi hitam */
+}
+
+
+/* sweet alert */
+.swal2-popup {
+    font-size: 24px;
+    /* Mengubah ukuran font */
+    width: 500px;
+    /* Mengatur lebar popup */
+    max-width: 90%;
+    /* Maksimal lebar popup responsif */
+}
+
+
+
+
+
+
+
+/* halaman 2 */
