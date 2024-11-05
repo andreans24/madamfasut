@@ -90,6 +90,194 @@
     <!-- SweetAlert JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/script1.js"></script>
+    <script>
+        // button script
+        // Contoh data gambar dengan latitude dan longitude
+        const galleryData = {
+            1: [{
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Dumai'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Tanjung Pinang'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Pekanbaru'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Tanjung Balai Karimun'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Kuala Tanjung'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Sibolga'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Tanjung Balai Asahan'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Tembilahan'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Gunungsitoli'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Belawan'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Tembilahan'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1664297798303-973ee8064e67?q=80&w=3866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Malahayati'
+                },
+            ],
+            2: [{
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Palembang'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Tanjung Priok'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Panjang'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Pontianak'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Teluk Bayur'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Banten'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Bengkulu'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Cirebon'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Jambi'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Pangkal Balam'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Sunda Kelapa'
+                },
+                {
+                    link: "{{ route('page-home2') }}",
+                    imgUrl: 'https://plus.unsplash.com/premium_photo-1661963131307-f79ad259ccfc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                    title: 'Tanjung Pandan'
+                },
+            ]
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.btn-circle');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    // event.preventDefault(); 
+
+                    // Ambil data galeri berdasarkan tombol klik
+                    const regional = button.dataset.regional;
+                    const SelectedGalleryData = galleryData[regional] || [];
+
+                    // Membuat konten galeri
+                    const galleryContent = `
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; max-width: 100%;">
+                        ${SelectedGalleryData.map(item => `
+                        <div style="position: relative; overflow: hidden; border-radius: 8px;">
+                            <a href="${item.link}" style="text-decoration: none;">
+                                <img src="${item.imgUrl}" alt="Gambar" style="width: 100%; height: 100%; border-radius: 8px; transition: transform 0.3s ease; transform: scale(1);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); border-radius: 8px; opacity: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0' "></div>
+                                <h5 style="position: absolute; color: white; top: 40%; left: 10px; transform: none; font-weight: normal;x">${item.title}</h5>
+                                <div style="position: absolute; top: 65%; left: 10px; width: 50px; height: 2px; background-color: rgba(255, 255, 0, 0.9); "></div>
+                            </a>
+                        </div>
+                    `).join('')}
+                    </div>
+                `;
+
+                    Swal.fire({
+                        title: `Pelindo Regional ${regional}`, // Judul popup
+                        html: galleryContent, //  HTML untuk isi konten
+                        showCloseButton: false, // Show button close
+                        showCancelButton: false, // Show button cancel
+                        confirmButtonText: false, // Teks untuk tombol konfirmasi
+                        // background: 'transparent', 
+                        backdrop: 'rgba(0, 0, 0, 0.5)', // Mengatur latar belakang saat popup terbuka
+                        focusConfirm: false, // Tidak memfokuskan tombol konfirmasi
+                        width: '800px', // Atur lebar popup 
+                    });
+
+                    const galleryContainer = document.getElementById('gallery');
+                    galleryContainer.innerHTML = galleryContent;
+
+                    galleryContainer.style.display = 'block';
+
+                    document.addEventListener('click', (event) => {
+                        if (galleryContainer.style.display === 'block' && !galleryContainer
+                            .contains(event.target)) {
+                            galleryContainer.style.display = 'none';
+                        }
+                    });
+
+                    // Tambahkan CSS untuk menyembunyikan tombol konfirmasi
+                    const confirmButton = document.querySelector('.swal2-confirm');
+                    if (confirmButton) {
+                        confirmButton.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
